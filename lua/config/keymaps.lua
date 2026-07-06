@@ -15,6 +15,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Commodities
 vim.keymap.set("n", "H", "^")
 vim.keymap.set("n", "L", "$")
+vim.keymap.set("n", "cn", "<cmd>:cnext<CR>")
+vim.keymap.set("n", "cp", "<cmd>:cprev<CR>")
 
 -- Remove highlighting search with Esc
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
