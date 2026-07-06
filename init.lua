@@ -12,5 +12,5 @@ require("plugins.gitsigns")
 -- Language-specific plugins
 require("plugins.languages.vala")
 
--- Load theme (which internally uses config.colors)
-require("plugins.tokyonight")
+local theme = vim.fn.hostname() == "fedora" and "kanagawa" or "tokyonight"
+require("plugins." .. theme)
